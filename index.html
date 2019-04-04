@@ -159,11 +159,11 @@
                             <!-- Welcome Text -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">Welcome <br> <span>On</span><span style="color:#1b7eb9">Board</span></h2>
-                                    <h5 data-animation="fadeInUp" data-delay="400ms">Here at OnBoard, we holds a vision to create sustainable “post-retirement” career paths for athletes in Hong Kong. As a social innovation, we invest and incubate companies founded by Athlete-preneurs, and provide career opportunities to athletes and advisory to their potential employers. </h5>
-                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">I'm OnBoard</a>
+                                    <h2 data-animation="fadeInUp" data-delay="200ms">Welcome <br> <span>On</span><span style="color:#1b7eb9">Board</span></h2>
+                                    <h5 data-animation="fadeInUp" data-delay="600ms">Here at OnBoard, we holds a vision to create sustainable “post-retirement” career paths for athletes in Hong Kong. As a social innovation, we invest and incubate companies founded by Athlete-preneurs, and provide career opportunities to athletes and advisory to their potential employers. </h5>
+                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="1000ms">I'm OnBoard</a>
                                     <!-- <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Linkedin</a> -->
-                                    <div style="padding-top: 10px" data-animation="fadeInUp" data-delay="400ms">
+                                    <div style="padding-top: 10px" data-animation="fadeInUp" data-delay="600ms">
                                         <a href="#" style="border-radius: 50%; background-color:#007ab9; color: white; padding-top: 2px; padding-right: 15px; padding-left: 12px; width: 45px; height: 45px; display: block; font-size: 25px; text-align: center;" class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                     <!-- <br/>
@@ -174,7 +174,7 @@
                             <!-- Welcome Thumbnail -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-thumbnail">
-                                    <img src="./img/bg-img/1-1-cut.png" alt="" data-animation="slideInRight" data-delay="400ms">
+                                    <img src="./img/bg-img/1-1-cut.png" alt="" data-animation="slideInRight" data-delay="600ms">
                                 </div>
                             </div>
                         </div>
@@ -663,12 +663,13 @@
                 </div>
 
             </div>
+            <div class="border-line"></div>
         </div>
     </section>
     <!-- ***** Blog Area End ***** -->
 
     <!-- ***** Newsletter Area Start ***** -->
-    <section class="uza-newsletter-area">
+    <!-- <section class="uza-newsletter-area"> -->
         <!-- <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-md-6 col-lg-6">
@@ -687,18 +688,18 @@
                 </div>
             </div> -->
             <!-- Border Bottom -->
-            <div class="border-line"></div>
-        </div>
-    </section>
+            
+        <!-- </div>
+    </section> -->
     <!-- ***** Newsletter Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area section-padding-80-0" style="background-image:url('./img/bg-img/footer2_opacity.png'); background-repeat: no-repeat; background-position: center; ">
+    <footer id="footer" class="footer-area section-padding-80-0" style="background-image:url('./img/bg-img/footer2_opacity.png'); background-repeat: no-repeat; background-position: center; width:100%; height: auto;">
         <div class="container">
             <div class="row justify-content-between">
 
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
+                <div id="footer_1" class="col-12 col-sm-6 col-lg-3" >
                     <div class="single-footer-widget mb-80">
                         <!-- Widget Title -->
                         <h4 class="widget-title">Contact Us</h4>
@@ -785,6 +786,13 @@
         </div>
     </footer>
     <!-- ***** Footer Area End ***** -->
+    <script>
+        if (window.innerWidth < 1000 || window.innerWidth > 1590) {
+            // alert("small screen.");
+            document.getElementById('footer').style = null;
+            // document.getElementById('footer_1').style = "background-image:url('./img/bg-img/footer2_opacity.png'); background-repeat: no-repeat; background-position: center; width:100%; height: auto;"
+        }
+    </script>
 
     <!-- ******* All JS Files ******* -->
     <!-- jQuery js -->
