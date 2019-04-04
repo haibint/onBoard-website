@@ -2086,10 +2086,19 @@ input:focus {
 
 /*# sourceMappingURL=style.css.map */
 
-.img__wrap {
+/* .img__wrap {
   position: relative;
   height: 313px;
   width: 500px;
+} */
+
+.img__wrap {
+  /* position: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55%;
+  width: 83%;
 }
 
 .img__description {
