@@ -30,11 +30,11 @@
         welcomeSlider.owlCarousel({
             items: 1,
             loop: true,
-            autoplay: true,
+            autoplay: false,
             smartSpeed: 1500,
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
-            autoplayTimeout: 7000,
+            autoplayTimeout: 700,
             nav: false
         })
         welcomeSlider.on('translate.owl.carousel', function () {
