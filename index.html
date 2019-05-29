@@ -435,12 +435,13 @@
         if (window.innerWidth < 1300 && window.innerWidth > 700) {
             // mid-size screen
             document.getElementById('footer').style = "background-color:#1b7eb9"
+            var img = new Image();
+            img.src = "./img/bg-img/OnBoard_logo_footer.jpg";
+            document.getElementById('footer_logo_div').appendChild(img);
         }else if (window.innerWidth <= 700) {
             // mobile phone screen
             document.getElementById('footer').style = "background-color:#1b7eb9"
             var img = new Image();
-            
-
             img.src = "./img/bg-img/OnBoard_logo_footer.jpg";
             document.getElementById('footer_logo_div').appendChild(img);
         }
